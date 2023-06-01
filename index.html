@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>SIGN UP</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password"  autocomplete="current-password"  type="password">
+                <span id="a">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: 0px; cursor: pointer;" onmousedown="show_password()" onmouseup="hide_password()" ></i>
+            </span>
+          <BR>
+                <div class="error"></div>
+            </div><br>
+           
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="password">
+                <!-- <span id="a">
+                    <i class="far fa-eye" id="togglePassword" style="margin-left: 0px; cursor: pointer;" onmousedown="show_password()" onmouseup="hide_password()" ></i>
+                </span> -->
+                
+                <div class="error"></div>
+            </div>
+            <button type="submit" onclick="alertbox()">Sign Up</button>
+        </form>
+    </div>
+    <script defer src="form.js"></script>
+</body>
+</html>
