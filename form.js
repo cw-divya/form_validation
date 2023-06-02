@@ -48,7 +48,8 @@ const validateInputs = () => {
 
     if(emailValue === '') {
         setError(email, 'Email is required');
-    } else if (emailValue.includes('@')&&emailValue.includes('.')&&emailValue.length>10){
+    } else if (emailValue.includes('@gmail.com')||emailValue.includes('@hotmail.com')||emailValue.includes('@cartrade.com')||
+    emailValue.includes('@carwale.com')||emailValue.includes('@bikewale.com')&&emailValue.length>10){
         setSuccess(email); 
         mail=true;
     } else {
